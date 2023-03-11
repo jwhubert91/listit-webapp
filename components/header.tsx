@@ -19,17 +19,17 @@ function Header({ className = "" }: Props) {
       className={`bg-black text-white flex justify-between items-center py-2`}
     >
       <Link href="/" className="ml-3">
-        <div className="text-2xl font-bold">ListIt - Local Shopping</div>
+        <div className="text-2xl font-medium">ListIt - Local Shopping</div>
       </Link>
       <nav className="flex md:gap-x-5 lg:gap-x-8 mr-3">
-        <Link href="#merchant" className="hover:underline hidden md:block">
+        <Link href="/merchants" className="hover:underline hidden md:block">
           Merchant Sign Up
         </Link>
         <Link href="/blog" className="hover:underline hidden md:block">
           Blog
         </Link>
-        <Link href="#contact" className="hover:underline hidden md:block">
-          Contact
+        <Link href="/contact" className="hover:underline hidden md:block">
+          Help
         </Link>
         <button
           className="p-0 m-0 bg-none text-3xl text-white md:hidden"

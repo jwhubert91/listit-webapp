@@ -1,8 +1,9 @@
 import React from "react"
 import Head from "next/head"
 import Header from "./header"
+import Footer from "./footer"
 
-function Layout({ children }) {
+function Layout({ children, className = "" }) {
   return (
     <>
       <Head>
@@ -11,11 +12,10 @@ function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="min-h-screen min-w-screen flex flex-col">
+      <div className="min-h-screen flex flex-col bg-gray-100">
         <Header />
-        <main className="min-w-screen max-w-[1280px] mx-auto flex-1">
-          {children}
-        </main>
+        <main className="flex-1 mx-auto">{children}</main>
+        <Footer />
       </div>
     </>
   )
