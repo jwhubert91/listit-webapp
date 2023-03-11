@@ -1,5 +1,6 @@
 import React from "react"
 import Head from "next/head"
+import Header from "./header"
 
 function Layout({ children }) {
   return (
@@ -10,7 +11,12 @@ function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="min-h-screen min-w-screen">{children}</div>
+      <div className="min-h-screen min-w-screen flex flex-col">
+        <Header />
+        <main className="min-w-screen max-w-[1280px] mx-auto flex-1">
+          {children}
+        </main>
+      </div>
     </>
   )
 }

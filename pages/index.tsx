@@ -6,7 +6,20 @@ import Image from "next/image"
 export default function Home() {
   return (
     <Layout>
-      <main className="">Home page!</main>
+      <div className="">
+        <div className="text-3xl">Local shopping in New York City</div>
+        <div>
+          Find what you need in local stores. Order online and pick up same day.
+        </div>
+        <div>Coming soon!</div>
+        <div id="#merchants">
+          <div>
+            Merchants request to join the beta and begin listing your products
+            to increase pick up orders today 📈
+          </div>
+          <button>Merchant Sign Up</button>
+        </div>
+      </div>
     </Layout>
   )
 }
