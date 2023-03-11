@@ -8,9 +8,9 @@
 }
 
 .panel__half {
-  height: 45vh;
+  min-height: 45vh;
 }
 
 .panel__full {
-  height: 90vh;
+  min-height: 90vh;
 }
