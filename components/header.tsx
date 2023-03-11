@@ -7,7 +7,7 @@ type Props = {
   className?: string
 }
 
-function header({ className = "" }: Props) {
+function Header({ className = "" }: Props) {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 
   const handleNavButtonClick = () => {
@@ -60,4 +60,4 @@ function header({ className = "" }: Props) {
   )
 }
 
-export default header
+export default Header
