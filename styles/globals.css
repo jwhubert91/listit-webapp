@@ -14,3 +14,16 @@
 .panel__full {
   min-height: 90vh;
 }
+
+.blog__container {
+  width: 100%;
+  max-width: 728px;
+}
+
+.blog__container p {
+  margin-bottom: 30px;
+}
+
+.text__headerMassive {
+  @apply text-6xl md:text-[90px] md:leading-[100px] lg:text-[110px] lg:leading-[110px] xl:text-[120px] xl:leading-[150px] font-bold;
+}
