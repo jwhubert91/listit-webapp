@@ -9,13 +9,16 @@ export default function Home() {
   return (
     <Layout className="layout__container">
       <Panel height="full">
-        <h1 className="text-6xl md:text-[90px] md:leading-[100px] lg:text-[110px] lg:leading-[110px] xl:text-[150px] xl:leading-[170px] font-bold mb-5">
-          Local shopping in New York City
+        <h1 className="text__headerMassive mb-5">
+          Local shopping in Bay Ridge, Brooklyn
         </h1>
         <h2 className="text-2xl md:text-3xl font-medium mb-5">
-          Find what you need in local stores. Order online and pick up same day.
+          Find what you need in local stores in Bay Ridge. Order online and pick
+          up same day.
         </h2>
-        <div className="mx-auto w-[fit-content] italic mb-10">Coming soon!</div>
+        <div className="mx-auto w-[fit-content] italic mb-10">
+          Check back soon. Coming April 2023!
+        </div>
         <div className="max-w-[600px] mx-auto border-4 border-black p-5 mb-[100px] lg:mb-0">
           <p className="mb-3 text-lg">
             Merchants request to join the beta and begin listing your products
