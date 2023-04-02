@@ -15,14 +15,6 @@ function AdminLoginForm({ onSuccess }: Props) {
 
   const handleSubmit = () => {
     setIsSubmitError(false)
-    console.log({
-      email,
-      actualEmail,
-      password,
-      actualPassword,
-      emailsMatch: email == actualEmail,
-      passwordsMatch: password == actualPassword,
-    })
     if (email == actualEmail && password == actualPassword) {
       onSuccess()
     } else {
