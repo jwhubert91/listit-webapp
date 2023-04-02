@@ -5,7 +5,7 @@ type Props = {
   onSuccess: () => void
 }
 
-function adminLoginForm({ onSuccess }: Props) {
+function AdminLoginForm({ onSuccess }: Props) {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [isSubmitError, setIsSubmitError] = useState(false)
@@ -65,4 +65,4 @@ function adminLoginForm({ onSuccess }: Props) {
   )
 }
 
-export default adminLoginForm
+export default AdminLoginForm

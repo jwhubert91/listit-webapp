@@ -74,7 +74,7 @@ function AdminPage({}: Props) {
   return (
     <Layout>
       {isAuthenticated ? (
-        <>
+        <div className="blog__container mx-auto">
           <h1 className="text__headerMassive mb-11">Admin Page</h1>
           <div className="border border-1 rounded-md p-5">
             <h3 className="font-bold text-xl mb-2">New Blog Post</h3>
@@ -126,7 +126,7 @@ function AdminPage({}: Props) {
               />
             </div>
           </div>
-        </>
+        </div>
       ) : (
         <AdminLoginForm onSuccess={() => setIsAuthenticated(true)} />
       )}
