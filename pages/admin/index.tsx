@@ -9,12 +9,14 @@ import "react-quill/dist/quill.snow.css"
 import Layout from "@/components/layout"
 import { GoodButton } from "@/components/buttons"
 import { BlogPostProps } from "@/types/blogPost"
+import AdminLoginForm from "@/components/adminLoginForm"
 
 type Props = {}
 
 function AdminPage({}: Props) {
   const [quillValue, setQuillValue] = useState("")
   const [isWindowLoaded, setIsWindowLoaded] = useState(false)
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
 
   const [blogTitle, setBlogTitle] = useState("")
   const [blogSlug, setBlogSlug] = useState("")
@@ -71,53 +73,63 @@ function AdminPage({}: Props) {
 
   return (
     <Layout>
-      <h1 className="text__headerMassive mb-11">Admin Page</h1>
-      <div className="border border-1 rounded-md p-5">
-        <h3 className="font-bold text-xl mb-2">New Blog Post</h3>
-        <div className="my-5">
-          <label>Title</label>
-          <input
-            value={blogTitle}
-            onChange={(e) => setBlogTitle(e.currentTarget.value)}
-            className="block w-full p-2 text-lg"
-            required
-          />
-        </div>
-        <div className="mb-5">
-          <label>Slug</label>
-          <input
-            value={blogSlug}
-            onChange={(e) => setBlogSlug(e.currentTarget.value)}
-            className="block w-full p-2 text-lg"
-            required
-          />
-        </div>
-        <div className="mb-5">
-          <label>Subheader</label>
-          <input
-            value={blogSubheader}
-            onChange={(e) => setBlogSubheader(e.currentTarget.value)}
-            className="block w-full p-2 text-lg"
-            required
-          />
-        </div>
-        <div className="mb-5">
-          {isWindowLoaded ? (
-            <ReactQuill
-              theme="snow"
-              value={quillValue}
-              onChange={setQuillValue}
-              modules={quillModules}
-              formats={quillFormats}
-            />
-          ) : (
-            "Loading"
-          )}
-        </div>
-        <div className="text-center">
-          <GoodButton title="Save Blog Post" onButtonPress={handleBlogSubmit} />
-        </div>
-      </div>
+      {isAuthenticated ? (
+        <>
+          <h1 className="text__headerMassive mb-11">Admin Page</h1>
+          <div className="border border-1 rounded-md p-5">
+            <h3 className="font-bold text-xl mb-2">New Blog Post</h3>
+            <div className="my-5">
+              <label>Title</label>
+              <input
+                value={blogTitle}
+                onChange={(e) => setBlogTitle(e.currentTarget.value)}
+                className="block w-full p-2 text-lg"
+                required
+              />
+            </div>
+            <div className="mb-5">
+              <label>Slug</label>
+              <input
+                value={blogSlug}
+                onChange={(e) => setBlogSlug(e.currentTarget.value)}
+                className="block w-full p-2 text-lg"
+                required
+              />
+            </div>
+            <div className="mb-5">
+              <label>Subheader</label>
+              <input
+                value={blogSubheader}
+                onChange={(e) => setBlogSubheader(e.currentTarget.value)}
+                className="block w-full p-2 text-lg"
+                required
+              />
+            </div>
+            <div className="mb-5">
+              {isWindowLoaded ? (
+                <ReactQuill
+                  theme="snow"
+                  value={quillValue}
+                  onChange={setQuillValue}
+                  modules={quillModules}
+                  formats={quillFormats}
+                  className="h-[200px] mb-[50px]"
+                />
+              ) : (
+                "Loading"
+              )}
+            </div>
+            <div className="text-center">
+              <GoodButton
+                title="Save Blog Post"
+                onButtonPress={handleBlogSubmit}
+              />
+            </div>
+          </div>
+        </>
+      ) : (
+        <AdminLoginForm onSuccess={() => setIsAuthenticated(true)} />
+      )}
     </Layout>
   )
 }

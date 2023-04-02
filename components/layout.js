@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Head from "next/head"
 import Header from "./header"
 import Footer from "./footer"
@@ -14,7 +14,7 @@ function Layout({ children, className = "" }) {
       </Head>
       <div className="min-h-screen flex flex-col bg-gray-100">
         <Header />
-        <main className="flex-1 mx-auto pt-5 pb-11 layout__container">
+        <main className="flex-1 mx-auto w-full pt-5 pb-11 layout__container">
           {children}
         </main>
         <Footer />
