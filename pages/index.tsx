@@ -13,7 +13,7 @@ export default function Home() {
   }
   return (
     <Layout className="layout__container" headData={pageHead}>
-      <Panel height="full">
+      <div className="text-center">
         <h1 className="text__headerMassive mb-5">
           Local shopping in Bay Ridge, Brooklyn
         </h1>
@@ -35,7 +35,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </Panel>
+      </div>
       {/* <Ticker /> */}
     </Layout>
   )
