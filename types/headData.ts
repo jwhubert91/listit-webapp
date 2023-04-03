@@ -1,4 +1,4 @@
-export interface headDataProps {
+export interface HeadDataProps {
   pageTitle: string
   pageDescription: string
   openGraphTitle?: string

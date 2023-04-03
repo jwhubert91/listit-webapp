@@ -4,10 +4,15 @@ import Image from "next/image"
 // import { Inter } from "next/font/google"
 // import styles from "@/styles/Home.module.css"
 import Panel from "../components/panel"
+import { HeadDataProps } from "@/types/headData"
 
 export default function Home() {
+  const pageHead: HeadDataProps = {
+    pageTitle: "Home",
+    pageDescription: "Shop Local in Bay Ridge, Brooklyn",
+  }
   return (
-    <Layout className="layout__container">
+    <Layout className="layout__container" headData={pageHead}>
       <Panel height="full">
         <h1 className="text__headerMassive mb-5">
           Local shopping in Bay Ridge, Brooklyn

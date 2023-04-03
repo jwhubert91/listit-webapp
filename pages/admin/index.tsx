@@ -10,6 +10,7 @@ import Layout from "@/components/layout"
 import { GoodButton } from "@/components/buttons"
 import { BlogPostProps } from "@/types/blogPost"
 import AdminLoginForm from "@/components/adminLoginForm"
+import { HeadDataProps } from "@/types/headData"
 
 type Props = {}
 
@@ -71,8 +72,13 @@ function AdminPage({}: Props) {
     "image",
   ]
 
+  const headData: HeadDataProps = {
+    pageTitle: "admin",
+    pageDescription: "admin",
+  }
+
   return (
-    <Layout>
+    <Layout headData={headData}>
       {isAuthenticated ? (
         <div className="blog__container mx-auto">
           <h1 className="text__headerMassive mb-11">Admin Page</h1>

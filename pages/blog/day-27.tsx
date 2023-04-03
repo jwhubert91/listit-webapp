@@ -1,12 +1,21 @@
 import Layout from "@/components/layout"
 import React from "react"
 import Link from "next/link"
+import { HeadDataProps } from "@/types/headData"
 
 type Props = {}
 
 function BlogPostPage({}: Props) {
+  const headData: HeadDataProps = {
+    pageTitle:
+      "120 Days of Retail: Day 27 - Starting a Shopping Site for Bay Ridge, Brooklyn",
+    pageDescription:
+      "Or, how I stopped being a hater and learned to love South Brooklyn",
+    openGraphImageUrl:
+      "https://images.unsplash.com/photo-1674510583160-09ea41059be7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+  }
   return (
-    <Layout>
+    <Layout headData={headData}>
       <div className="blog__container">
         <h1 className="font-bold text-gray-800 text-3xl leading-tight mb-1">
           120 Days of Retail: Day 27 - Starting a Shopping Site for Bay Ridge,

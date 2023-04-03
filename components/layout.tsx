@@ -2,12 +2,12 @@ import React, { ReactElement } from "react"
 import Head from "next/head"
 import Header from "./header"
 import Footer from "./footer"
-import { headDataProps } from "@/types/headData"
+import { HeadDataProps } from "@/types/headData"
 
 interface LayoutProps {
   children: ReactElement
   className?: string
-  headData: headDataProps
+  headData: HeadDataProps
 }
 
 function Layout({ children, className = "", headData }: LayoutProps) {
@@ -21,7 +21,7 @@ function Layout({ children, className = "", headData }: LayoutProps) {
   return (
     <>
       <Head>
-        <title>ListIt.one | {pageTitle}</title>
+        <title>{pageTitle} | ListIt.one</title>
         <meta name="description" content={pageDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -34,7 +34,7 @@ function Layout({ children, className = "", headData }: LayoutProps) {
       </Head>
       <div className="min-h-screen flex flex-col bg-gray-100">
         <Header />
-        <main className="flex-1 mx-auto w-full pt-5 pb-11 layout__container">
+        <main className="flex-1 flex justify-center mx-auto w-full pt-5 pb-11 layout__container">
           {children}
         </main>
         <Footer />

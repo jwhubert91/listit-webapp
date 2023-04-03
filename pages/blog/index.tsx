@@ -3,12 +3,17 @@ import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import BlogCard from "@/components/blogCard"
+import { HeadDataProps } from "@/types/headData"
 
 type Props = {}
 
 function BlogOverviewPage({}: Props) {
+  const headData: HeadDataProps = {
+    pageTitle: "Blog",
+    pageDescription: "Blog Posts for Listit.one",
+  }
   return (
-    <Layout>
+    <Layout headData={headData}>
       <div>
         <h1 className="text__headerMassive mt-2 mb-5 text-center">
           ListIt Blog 🛍
