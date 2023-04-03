@@ -1,6 +1,7 @@
 import Layout from "@/components/layout"
 import React from "react"
 import Link from "next/link"
+import { useRouter } from "next/router"
 import { HeadDataProps } from "@/types/headData"
 
 type Props = {}
@@ -12,9 +13,15 @@ function BlogPostPage({}: Props) {
       "Mapping the plan for a public launch of ListIt for shopping in Bay Ridge, Brooklyn",
     openGraphImageUrl: "",
   }
+  const router = useRouter()
   return (
     <Layout headData={headData}>
       <div className="blog__container">
+        <div className="mb-5 text-center">
+          <button onClick={() => router.back()}>
+            <span className="text-xl font-medium underline">ListIt Blog</span>
+          </button>
+        </div>
         <h1 className="font-bold text-gray-800 text-3xl leading-tight mb-1">
           120 Days of Retail: Day 28 - A 90 day launch plan for ListIt
         </h1>
