@@ -9,7 +9,7 @@ type Props = {
   children: ReactElement
 }
 
-function blogArticle({ blogTitle, blogSubtitle, dateString, children }: Props) {
+function BlogArticle({ blogTitle, blogSubtitle, dateString, children }: Props) {
   const router = useRouter()
 
   return (
@@ -33,4 +33,4 @@ function blogArticle({ blogTitle, blogSubtitle, dateString, children }: Props) {
   )
 }
 
-export default blogArticle
+export default BlogArticle

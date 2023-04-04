@@ -1,5 +1,6 @@
 import React from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 interface BlogCardProps {
   slug: string
@@ -20,7 +21,7 @@ function blogCard({
     <Link href={slug}>
       <div className="border border-5 border-black p-2 rounded-md">
         <div className="mb-2">
-          <img src={imageUrl} />
+          <img src={imageUrl} alt={title} />
         </div>
         <span className="mb-2 text-sm">{date}</span>
         <h3 className="font-bold text-lg">{title}</h3>
