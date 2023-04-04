@@ -20,12 +20,20 @@ function BlogOverviewPage({}: Props) {
         </h1>
         <div className="grid grid-cols-1 gap-y-5 gap-x-5 mx-5 md:grid-cols-2 lg:grid-cols-3">
           <BlogCard
+            slug="/blog/day-29"
+            imageUrl="https://images.unsplash.com/photo-1586892478025-2b5472316f22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            date="Mon Apr 3, 2023"
+            title="120 Days of Retail: Day 29 - Making the Landing Page Appealing to
+            South Brooklyn Retailers"
+            subtitle="A quick check-in on the ListIt website homepage"
+          />
+          <BlogCard
             slug="/blog/day-28"
             imageUrl="https://images.unsplash.com/photo-1457364887197-9150188c107b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
             date="Sun Apr 2, 2023"
             title="120 Days of Retail: Day 28 - A 90 day launch plan for ListIt"
             subtitle="Mapping the plan for a public launch of ListIt for shopping in Bay
-            Ridge, Brooklynn"
+            Ridge, Brooklyn"
           />
           <BlogCard
             slug="/blog/day-27"

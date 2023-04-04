@@ -29,3 +29,7 @@
 .text__headerMassive {
   @apply text-6xl md:text-[90px] md:leading-[100px] lg:text-[110px] lg:leading-[110px] xl:text-[120px] xl:leading-[150px] font-bold;
 }
+
+a {
+  text-decoration: underline;
+}
