@@ -13,7 +13,7 @@ export default function Home() {
   }
   return (
     <Layout className="layout__container" headData={pageHead}>
-      <div className="text-center">
+      <div className="text-center flex flex-col items-center">
         <h1 className="text__headerMassive mb-5">
           Local shopping in Bay Ridge, Brooklyn
         </h1>
@@ -29,7 +29,7 @@ export default function Home() {
             Merchants request to join the beta and begin listing your products
             to increase pick up orders today 📈
           </p>
-          <div className="flex items-center">
+          <div className="flex justify-center">
             <button className="py-3 px-10 bg-green-600 hover:bg-green-500 border-2 mx-auto">
               Merchant Sign Up
             </button>

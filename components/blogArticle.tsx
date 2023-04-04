@@ -13,7 +13,7 @@ function BlogArticle({ blogTitle, blogSubtitle, dateString, children }: Props) {
   const router = useRouter()
 
   return (
-    <div className="blog__container">
+    <div className="blog__container mx-auto">
       <div className="mb-5">
         <button onClick={() => router.back()} className="flex items-center">
           <IoIosArrowRoundBack className="text-3xl text-black" />

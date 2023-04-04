@@ -16,7 +16,7 @@ function Layout({ children, className = "", headData }: LayoutProps) {
       <SEOHead headData={headData} />
       <div className="min-h-screen flex flex-col bg-gray-100">
         <Header />
-        <main className="flex-1 px-5 flex flex-col justify-center mx-auto w-full pt-3 pb-11 layout__container">
+        <main className="flex-1 px-5 flex flex-col items-center mx-auto w-full pt-3 pb-11 layout__container">
           {children}
         </main>
         <Footer />
