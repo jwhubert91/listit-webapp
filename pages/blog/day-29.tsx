@@ -14,7 +14,6 @@ function BlogPostPage({}: Props) {
     pageDescription: "A quick check-in on the ListIt website homepage",
     openGraphImageUrl: "",
   }
-  const router = useRouter()
   return (
     <Layout headData={headData}>
       <BlogArticle
