@@ -20,6 +20,13 @@ function BlogOverviewPage({}: Props) {
         </h1>
         <div className="grid grid-cols-1 gap-y-5 gap-x-5 mx-5 md:grid-cols-2 lg:grid-cols-3">
           <BlogCard
+            slug="/blog/day-30"
+            imageUrl="https://images.unsplash.com/photo-1599658880436-c61792e70672?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            date="Tue Apr 4, 2023"
+            title="120 Days of Retail: Day 30 - Installed Google Analytics"
+            subtitle="Just checking in"
+          />
+          <BlogCard
             slug="/blog/day-29"
             imageUrl="https://images.unsplash.com/photo-1586892478025-2b5472316f22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
             date="Mon Apr 3, 2023"
