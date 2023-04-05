@@ -20,7 +20,7 @@ function BlogPostPage({}: Props) {
         blogTitle="120 Days of Retail: Day 29 - Making the Landing Page Appealing to
           South Brooklyn Retailers"
         blogSubtitle="A quick check-in on the ListIt website homepage"
-        dateString="Sun Apr 3, 2023"
+        dateString="Mon Apr 3, 2023"
       >
         <>
           <p className="italic">
