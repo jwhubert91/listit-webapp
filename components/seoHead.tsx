@@ -22,7 +22,7 @@ function SEOHead({ headData }: Props) {
       <title>{`${pageTitle} | ListIt.one`}</title>
       <meta name="description" content={pageDescription} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/listit-favicon.ico" />
       <meta property="og:title" content={openGraphTitle || pageTitle} />
       <meta
         property="og:description"
