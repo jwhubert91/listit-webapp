@@ -1,11 +1,11 @@
-import React, { ReactElement } from "react"
+import React, { ReactNode } from "react"
 import Header from "./header"
 import Footer from "./footer"
 import SEOHead from "./seoHead"
 import { HeadDataProps } from "@/types/headData"
 
 interface LayoutProps {
-  children: ReactElement
+  children: ReactNode
   className?: string
   headData: HeadDataProps
 }

@@ -5,8 +5,11 @@ import Image from "next/image"
 // import styles from "@/styles/Home.module.css"
 import Panel from "../components/panel"
 import { HeadDataProps } from "@/types/headData"
+import { useRouter } from "next/router"
+import { PAGE_PATHS } from "@/utils/constants"
 
 export default function Home() {
+  const router = useRouter()
   const pageHead: HeadDataProps = {
     pageTitle: "Home",
     pageDescription: "Shop Local in Bay Ridge, Brooklyn",
@@ -30,7 +33,10 @@ export default function Home() {
             to increase pick up orders today 📈
           </p>
           <div className="flex justify-center">
-            <button className="py-3 px-10 bg-green-600 hover:bg-green-500 border-2 mx-auto">
+            <button
+              className="py-3 px-10 bg-green-600 hover:bg-green-500 border-2 mx-auto"
+              onClick={() => router.push(PAGE_PATHS.MERCHANTS)}
+            >
               Merchant Sign Up
             </button>
           </div>

@@ -20,6 +20,13 @@ function BlogOverviewPage({}: Props) {
         </h1>
         <div className="grid grid-cols-1 gap-y-5 gap-x-5 mx-5 md:grid-cols-2 lg:grid-cols-3">
           <BlogCard
+            slug="/blog/day-31"
+            imageUrl="https://images.unsplash.com/photo-1614898983622-f20044c60b30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+            date="Wed Apr 5, 2023"
+            title="120 Days of Retail: Day 31 - How to Actually Help Retailers in South Brooklyn"
+            subtitle="A discussion of options for South Brooklyn retailers looking to improve their online presence"
+          />
+          <BlogCard
             slug="/blog/day-30"
             imageUrl="https://images.unsplash.com/photo-1599658880436-c61792e70672?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
             date="Tue Apr 4, 2023"
