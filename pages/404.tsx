@@ -18,7 +18,7 @@ function Custom404({}: Props) {
           {"Woops! You've reached the 404 page. Go "}
           <Link href={PAGE_PATHS.HOME}>back to safety</Link> or let us know what
           you were looking for on the{" "}
-          <Link href={PAGE_PATHS.HELP}>help page.</Link>
+          <Link href={PAGE_PATHS.CONTACT}>help page.</Link>
         </h2>
       </div>
     </Layout>
