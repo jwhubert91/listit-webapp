@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react"
 import { useRouter } from "next/router"
 import { IoIosArrowRoundBack } from "react-icons/io"
+import { PAGE_PATHS } from "@/utils/constants"
 
 type Props = {
   blogTitle: string
