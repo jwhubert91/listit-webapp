@@ -17,6 +17,10 @@
 }
 */
 
+.blog__width {
+  max-width: 728px;
+}
+
 .blog__container {
   width: 100%;
   max-width: 728px;
@@ -30,6 +34,6 @@
   @apply text-5xl md:text-[90px] md:leading-[100px] lg:text-[110px] lg:leading-[110px] xl:text-[120px] xl:leading-[150px] font-bold text-center;
 }
 
-a {
+.blog__container a {
   text-decoration: underline;
 }

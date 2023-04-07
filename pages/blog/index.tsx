@@ -15,10 +15,17 @@ function BlogOverviewPage({}: Props) {
   return (
     <Layout headData={headData}>
       <div>
-        <h1 className="text__headerMassive mt-2 mb-5 text-center">
+        <h1 className="text__headerMassive mt-2 mb-11 text-center">
           ListIt Blog 🛍
         </h1>
-        <div className="grid grid-cols-1 gap-y-5 gap-x-5 mx-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-col gap-y-5 blog__width">
+          <BlogCard
+            slug="/blog/day-32"
+            imageUrl="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+            date="Thu Apr 6, 2023"
+            title="BOPIS! Why Buy-Online Pick Up In-Store is Becoming Essential"
+            subtitle="Everything points to BOPIS, or curbside pickup, becoming the next important piece of omnichannel sales"
+          />
           <BlogCard
             slug="/blog/day-31"
             imageUrl="https://images.unsplash.com/photo-1614898983622-f20044c60b30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
