@@ -8,14 +8,17 @@ type Props = {}
 
 function BlogPostPage({}: Props) {
   const headData: HeadDataProps = {
-    pageTitle: "120 Days of Retail: Day 32 - ",
-    pageDescription: "",
-    openGraphImageUrl: "",
+    pageTitle:
+      "120 Days of Retail: Day 32 - BOPIS! Why Buy-Online Pick Up In-Store is Becoming Essential",
+    pageDescription:
+      "Everything points to BOPIS, or curbside pickup, becoming the next important piece of omnichannel sales",
+    openGraphImageUrl:
+      "https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
   }
   return (
     <Layout headData={headData}>
       <BlogArticle
-        blogTitle="BOPIS! Why Buy-Online Pick Up In-Store is Becoming Essential"
+        blogTitle="120 Days of Retail: Day 32 - BOPIS! Why Buy-Online Pick Up In-Store is Becoming Essential"
         blogSubtitle="Everything points to BOPIS, or curbside pickup, becoming the next important piece of omnichannel sales"
         dateString="Thu Apr 6, 2023"
       >
