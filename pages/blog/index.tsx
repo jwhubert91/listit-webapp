@@ -23,7 +23,7 @@ function BlogOverviewPage({}: Props) {
             slug="/blog/day-32"
             imageUrl="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
             date="Thu Apr 6, 2023"
-            title="BOPIS! Why Buy-Online Pick Up In-Store is Becoming Essential"
+            title="120 Days of Retail: Day 32 - BOPIS! Why Buy-Online Pick Up In-Store is Becoming Essential"
             subtitle="Everything points to BOPIS, or curbside pickup, becoming the next important piece of omnichannel sales"
           />
           <BlogCard

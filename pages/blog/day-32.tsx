@@ -15,7 +15,7 @@ function BlogPostPage({}: Props) {
   return (
     <Layout headData={headData}>
       <BlogArticle
-        blogTitle="BOPIS! Why Buy-Online Pick Up In-Store is Becoming Essential"
+        blogTitle="120 Days of Retail: Day 32 - BOPIS! Why Buy-Online Pick Up In-Store is Becoming Essential"
         blogSubtitle="Everything points to BOPIS, or curbside pickup, becoming the next important piece of omnichannel sales"
         dateString="Thu Apr 6, 2023"
       >
