@@ -19,7 +19,7 @@ function SEOHead({ headData }: Props) {
   } = headData
   return (
     <Head>
-      <title>{`${pageTitle} | ListIt.one`}</title>
+      <title>{`${pageTitle} | ListIt Local Shopping`}</title>
       <meta name="description" content={pageDescription} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/listit-favicon.ico" />
