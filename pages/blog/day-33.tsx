@@ -59,6 +59,7 @@ function BlogPostPage({}: Props) {
               {`(or at least seem like they are from the outside- this one's subjective 😉)`}
             </li>
           </ul>
+          <br />
           <p>
             {`Luckily I was able to find a handy directory for many of Bay Ridge's retail businesses here: `}
             <a href="https://www.bayridgebid.com/directory">
