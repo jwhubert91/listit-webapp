@@ -16,7 +16,11 @@ function BlogPostPage({}: Props) {
   }
   return (
     <Layout headData={headData}>
-      <BlogArticle blogTitle="" blogSubtitle="" dateString="Fri Apr 7, 2023">
+      <BlogArticle
+        blogTitle="120 Days of Retail: Day 33 - How Not to Invent a Horse"
+        blogSubtitle="A discussion of user testing on the cusp of a totally new retail concept"
+        dateString="Fri Apr 7, 2023"
+      >
         <>
           <p className="italic">
             This is part 33 of a 120 day series on validating our product
