@@ -20,6 +20,13 @@ function BlogOverviewPage({}: Props) {
         </h1>
         <div className="flex flex-col gap-y-5 blog__width">
           <BlogCard
+            slug="/blog/day-33"
+            imageUrl="https://th-thumbnailer.cdn-si-edu.com/PiL_TdI71UP7a7w818Lp-7DB4YE=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/b7/1e/b71e206b-df4a-4d9e-958a-1a249c544c6e/the_horse_in_motion_2_resized.jpg"
+            date="Fri Apr 7, 2023"
+            title="120 Days of Retail: Day 33 - How Not to Invent a Horse"
+            subtitle="A discussion of user testing on the cusp of a totally new retail concept"
+          />
+          <BlogCard
             slug="/blog/day-32"
             imageUrl="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
             date="Thu Apr 6, 2023"
