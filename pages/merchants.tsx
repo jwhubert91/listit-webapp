@@ -16,9 +16,10 @@ function Merchants({}: Props) {
         <h1 className="text__headerMassive mb-5">Merchant Sign Up</h1>
         <div className="blog__container">
           <p className="mb-10 text-2xl">
-            ListIt is the buy-online-pickup-in-store (BOPIS) solution for
+            {`ListIt is the buy-online-pickup-in-store (BOPIS) solution for
             independent retailers. It's free to make a page and begin selling.
-            We'll never charge you a dime<sup className="text-red-500">*</sup>
+            We'll never charge you a dime`}
+            <sup className="text-red-500">*</sup>
           </p>
         </div>
         <div className="flex-1 flex flex-col justify-center items-center blog__container">
