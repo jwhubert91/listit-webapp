@@ -20,6 +20,13 @@ function BlogOverviewPage({}: Props) {
         </h1>
         <div className="flex flex-col gap-y-5 blog__width">
           <BlogCard
+            slug="/blog/day-34"
+            imageUrl="https://images.unsplash.com/photo-1557500608-1c483bc8d90d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            date="Sat Apr 8, 2023"
+            title="120 Days of Retail: Day 34 - Why Retailers Should Adopt Buy Online Pickup In-Store"
+            subtitle="The option to buy online and pick up in-store is incredibly popular among shoppers and increasing 15% each year."
+          />
+          <BlogCard
             slug="/blog/day-33"
             imageUrl="https://th-thumbnailer.cdn-si-edu.com/PiL_TdI71UP7a7w818Lp-7DB4YE=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/b7/1e/b71e206b-df4a-4d9e-958a-1a249c544c6e/the_horse_in_motion_2_resized.jpg"
             date="Fri Apr 7, 2023"

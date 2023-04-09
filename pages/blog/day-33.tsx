@@ -37,7 +37,7 @@ function BlogPostPage({}: Props) {
               alt="the first motion picture ever made was of a galloping horse in 1878"
             />
             <span className="text-sm">
-              . Credit{" "}
+              Credit{" "}
               <a
                 href="https://www.smithsonianmag.com/smithsonian-institution/how-19th-century-photographer-first-gif-galloping-horse-180970990/"
                 className="underline"
