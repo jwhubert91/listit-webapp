@@ -12,13 +12,13 @@ export default function Home() {
   const router = useRouter()
   const pageHead: HeadDataProps = {
     pageTitle: "Home",
-    pageDescription: "Shop Local in Bay Ridge, Brooklyn",
+    pageDescription: "Shop Local in South Brooklyn",
   }
   return (
     <Layout className="layout__container" headData={pageHead}>
       <div className="text-center flex flex-col items-center">
         <h1 className="text__headerMassive mb-5">
-          Local shopping in Bay Ridge, Brooklyn
+          Local shopping in South Brooklyn
         </h1>
         <h2 className="text-2xl md:text-3xl font-medium mb-5">
           Find what you need in local stores in Bay Ridge. Order online and pick
