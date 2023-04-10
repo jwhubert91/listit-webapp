@@ -20,6 +20,13 @@ function BlogOverviewPage({}: Props) {
         </h1>
         <div className="flex flex-col gap-y-5 blog__width">
           <BlogCard
+            slug="/blog/day-35"
+            imageUrl="https://images.unsplash.com/photo-1557500608-1c483bc8d90d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            date="Sun Apr 9, 2023"
+            title="120 Days of Retail: Day 35"
+            subtitle=""
+          />
+          <BlogCard
             slug="/blog/day-34"
             imageUrl="https://images.unsplash.com/photo-1557500608-1c483bc8d90d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
             date="Sat Apr 8, 2023"
