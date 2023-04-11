@@ -59,8 +59,9 @@ function BlogPostPage({}: Props) {
           <p>{`Lastly, we're going to shift to focusing on a few important keywords that Google's Adword Keyword research tool uncovered to help retailers find ListIt online. The following keywords are part of our core business, are popular or growing in popularity year-over-year, and aren't too competitive. Maybe no one will find us if they search "online shopping", but these will help give us a better chance:`}</p>
           <ul className="mb-10 list-disc">
             <li>
-              <h3 className="font-bold inline">in store pick</h3> - Searches
-              increased 900% YoY
+              <h3 className="font-bold inline">in store pick</h3> -{" "}
+              {`Searches
+              increased 900% YoY`}
             </li>
             <li>
               <h3 className="font-bold inline">local stores</h3> - Where we
@@ -79,8 +80,9 @@ function BlogPostPage({}: Props) {
               this be? Unclear but obviously related
             </li>
             <li>
-              <h3 className="font-bold inline">store with pick up</h3> - It's
-              pretty cool people are searching for this honestly
+              <h3 className="font-bold inline">store with pick up</h3> -{" "}
+              {`It's
+              pretty cool people are searching for this honestly`}
             </li>
           </ul>
           <p className="italic">
