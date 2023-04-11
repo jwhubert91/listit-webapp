@@ -20,6 +20,13 @@ function BlogOverviewPage({}: Props) {
         </h1>
         <div className="flex flex-col gap-y-5 blog__width">
           <BlogCard
+            slug="/blog/day-36"
+            imageUrl="https://images.unsplash.com/photo-1588702547919-26089e690ecc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            date="Mon Apr 10, 2023"
+            title="120 Days of Retail: Day 36 - An all-new slogan for ListIt, and new verbiage for the site"
+            subtitle="Refreshing how we explain the service to retailers to include the value-add to them"
+          />
+          <BlogCard
             slug="/blog/day-35"
             imageUrl="https://images.unsplash.com/photo-1557500608-1c483bc8d90d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
             date="Sun Apr 9, 2023"
