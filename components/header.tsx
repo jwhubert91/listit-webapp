@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Link from "next/link"
 import { BiMenu } from "react-icons/bi"
 import { AiOutlineClose } from "react-icons/ai"
+import { BsGlobe2 } from "react-icons/bs"
 
 type Props = {
   className?: string
@@ -19,7 +20,10 @@ function Header({ className = "" }: Props) {
       className={`bg-black text-white flex justify-between items-center py-2`}
     >
       <Link href="/" className="ml-3">
-        <div className="text-2xl font-medium">ListIt - Local Shopping</div>
+        <div className="text-2xl font-medium flex items-center">
+          <BsGlobe2 className="text-white mr-3" />
+          ListIt - Local Shopping
+        </div>
       </Link>
       <nav className="flex md:gap-x-5 lg:gap-x-8 mr-3">
         <Link href="/merchants" className="hover:underline hidden md:block">
