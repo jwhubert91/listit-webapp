@@ -3,6 +3,7 @@ import Header from "./header"
 import Footer from "./footer"
 import SEOHead from "./seoHead"
 import { HeadDataProps } from "@/types/headData"
+import Headroom from "react-headroom"
 
 interface LayoutProps {
   children: ReactNode
@@ -15,8 +16,10 @@ function Layout({ children, className = "", headData }: LayoutProps) {
     <>
       <SEOHead headData={headData} />
       <div className="min-h-screen flex flex-col bg-gray-100">
-        <Header />
-        <main className="flex-1 px-5 flex flex-col items-center mx-auto w-full pt-3 pb-11 layout__container">
+        <Headroom>
+          <Header />
+        </Headroom>
+        <main className="flex-1 flex flex-col items-center mx-auto w-full layout__container">
           {children}
         </main>
         <Footer />
