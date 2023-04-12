@@ -1,6 +1,4 @@
 import Layout from "@/components/layout"
-import Image from "next/image"
-import Link from "next/link"
 import React from "react"
 import BlogCard from "@/components/blogCard"
 import { HeadDataProps } from "@/types/headData"
@@ -19,6 +17,13 @@ function BlogOverviewPage({}: Props) {
           ListIt Blog 🛍
         </h1>
         <div className="flex flex-col gap-y-5 blog__width">
+          <BlogCard
+            slug="/blog/day-37"
+            imageUrl="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2F60e8d18a-daf5-11e7-a039-c64b1c09b482?dpr=1&fit=scale-down&source=next&width=700"
+            date="Tue Apr 11, 2023"
+            title="120 Days of Retail: Day 37 - Doing for Retail What Substack Did for Blogging"
+            subtitle="When we remove technical barriers, we let ordinary people contribute more"
+          />
           <BlogCard
             slug="/blog/day-36"
             imageUrl="https://images.unsplash.com/photo-1588702547919-26089e690ecc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
