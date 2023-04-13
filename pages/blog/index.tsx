@@ -18,6 +18,13 @@ function BlogOverviewPage({}: Props) {
         </h1>
         <div className="flex flex-col gap-y-5 blog__width">
           <BlogCard
+            slug="/blog/day-38"
+            imageUrl="https://image.cnbcfm.com/api/v1/image/104313205-4ED5-SA-UBER-CALACANIS-030117.jpg?v=1529474358&w=750&h=422&vtcrop=y"
+            date="Wed Apr 12, 2023"
+            title="120 Days of Retail: Day 38 - Early Investor in Uber Prefers to Pick Up In-Store!"
+            subtitle="On a recent episode of This Week in Startups, early Uber investor Jason Calacanis says he prefers to pick up his meals than get them delivered"
+          />
+          <BlogCard
             slug="/blog/day-37"
             imageUrl="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2F60e8d18a-daf5-11e7-a039-c64b1c09b482?dpr=1&fit=scale-down&source=next&width=700"
             date="Tue Apr 11, 2023"
