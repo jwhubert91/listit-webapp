@@ -1,12 +1,8 @@
 import Layout from "@/components/layout"
-import Ticker from "@/components/ticker"
-import Image from "next/image"
-// import { Inter } from "next/font/google"
-// import styles from "@/styles/Home.module.css"
-import Panel from "../components/panel"
+// import Ticker from "@/components/ticker"
 import { HeadDataProps } from "@/types/headData"
 import { useRouter } from "next/router"
-import { PAGE_PATHS } from "@/utils/constants"
+import { PAGE_PATHS } from "@/utilities/constants"
 
 export default function Home() {
   const router = useRouter()

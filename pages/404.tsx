@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "@/components/layout"
 import Link from "next/link"
-import { PAGE_PATHS } from "@/utils/constants"
+import { PAGE_PATHS } from "@/utilities/constants"
 
 type Props = {}
 
