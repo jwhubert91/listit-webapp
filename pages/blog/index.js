@@ -14,6 +14,9 @@ function BlogOverviewPage({ sanityBlogPosts }) {
     pageTitle: "Blog",
     pageDescription: "Blog Posts for Listit.one",
   }
+
+  console.log(sanityBlogPosts)
+
   return (
     <Layout headData={headData}>
       <div>
@@ -23,9 +26,9 @@ function BlogOverviewPage({ sanityBlogPosts }) {
         <div className="flex flex-col gap-y-5 blog__width">
           {sanityBlogPosts &&
             sanityBlogPosts.map((sanityBlogPost, idx) => {
-              const sanityMainImageUrl = getSanityImageAsset(
+              const sanityMainImageUrl = getSanityImageUrl(
                 sanityBlogPost.mainImage.image
-              )
+              ).url()
               return (
                 <BlogCard
                   key={idx}
@@ -34,6 +37,7 @@ function BlogOverviewPage({ sanityBlogPosts }) {
                   date={publishDateString(sanityBlogPost.publishDate)}
                   title={sanityBlogPost.title}
                   subtitle={sanityBlogPost.subtitle}
+                  isLocalImage={false}
                 />
               )
             })}
@@ -47,7 +51,9 @@ function BlogOverviewPage({ sanityBlogPosts }) {
 export default BlogOverviewPage
 
 export async function getStaticProps() {
-  const sanityBlogPosts = await sanityClient.fetch(`*[_type == "blogPost"]`)
+  const sanityBlogPosts = await sanityClient.fetch(
+    `*[_type == "blogPost"] | order(publishDate desc)`
+  )
 
   return {
     props: {

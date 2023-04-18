@@ -1,5 +1,10 @@
 import imageUrlBuilder from "@sanity/image-url"
-import { getFileAsset, getImage, getImageAsset } from "@sanity/asset-utils"
+import {
+  getFileAsset,
+  getImage,
+  getImageAsset,
+  buildImageUrl,
+} from "@sanity/asset-utils"
 import moment from "moment"
 import { useNextSanityImage } from "next-sanity-image"
 

@@ -1,5 +1,6 @@
 import React from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 interface BlogCardProps {
   slug: string
@@ -7,6 +8,7 @@ interface BlogCardProps {
   date: string
   title: string
   subtitle: string
+  isLocalImage: boolean
 }
 
 function blogCard({
@@ -15,12 +17,23 @@ function blogCard({
   date = "",
   title = "",
   subtitle = "",
+  isLocalImage = true,
 }: BlogCardProps) {
   return (
     <Link href={slug}>
-      <div className="border border-5 border-black gap-x-5 px-3 py-2 rounded-md flex items-start text-left">
-        <div className="mb-2 aspect-[3/2] max-w-[200px]">
-          <img src={imageUrl} alt={title} className="cover" />
+      <div className="border border-5 border-black gap-x-5 px-3 py-2 rounded-md flex text-left">
+        <div className="mb-2 aspect-[3/2] h-[100px] relative">
+          {isLocalImage ? (
+            <img src={imageUrl} alt={title} className="cover" />
+          ) : (
+            <Image
+              src={imageUrl}
+              alt={title}
+              className="absolute cover"
+              fill={true}
+              unoptimized={true}
+            />
+          )}
         </div>
         <div className="flex flex-col">
           <h3 className="font-bold text-lg">{title}</h3>
