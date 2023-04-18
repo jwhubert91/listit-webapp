@@ -125,7 +125,7 @@ const PortableTextArticle = ({
           <div className={`${bodyContentClassName} lg:relative`}>
             <div className="block my-f lg:absolute lg:w-[279px] lg:left-[-307px]">
               <HorizontalRule className={horizontalRuleClassName} />
-              <span className={headerClassName}>"{text}"</span>
+              <span className={headerClassName}>{`"${text}"`}</span>
             </div>
           </div>
         )
