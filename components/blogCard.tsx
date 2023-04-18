@@ -8,7 +8,7 @@ interface BlogCardProps {
   date: string
   title: string
   subtitle: string
-  isLocalImage: boolean
+  isLocalImage?: boolean
 }
 
 function blogCard({
