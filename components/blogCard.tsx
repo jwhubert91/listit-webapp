@@ -31,6 +31,7 @@ function blogCard({
               alt={title}
               className="absolute cover"
               fill={true}
+              // discussion of image issue and why add unoptimized prop: https://github.com/vercel/next.js/issues/23523
               unoptimized={true}
             />
           )}
