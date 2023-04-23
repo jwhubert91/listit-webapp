@@ -26,12 +26,12 @@ const PortableTextArticle = ({
           <div
             className={`blog__articleParagraph text-center mb-[30px] ${bodyContentClassName}`}
           >
-            <div className="relative aspect-video h-[500px]">
+            <div className="relative aspect-video">
               <Image
                 src={pictureUrl}
                 // alt={subtitle}
                 alt="test alt"
-                className="absolute contain"
+                className="absolute !contain"
                 fill
                 sizes="730px"
                 priority={false}
