@@ -1,12 +1,8 @@
 import Layout from "@/components/layout"
-import Ticker from "@/components/ticker"
-import Image from "next/image"
-// import { Inter } from "next/font/google"
-// import styles from "@/styles/Home.module.css"
-import Panel from "../components/panel"
+// import Ticker from "@/components/ticker"
 import { HeadDataProps } from "@/types/headData"
 import { useRouter } from "next/router"
-import { PAGE_PATHS } from "@/utils/constants"
+import { PAGE_PATHS } from "@/utilities/constants"
 
 export default function Home() {
   const router = useRouter()
@@ -34,11 +30,14 @@ export default function Home() {
             day.
           </h2>
           <button
-            className="py-3 px-10 bg-green-600 hover:bg-green-500 border-2 mx-auto"
+            className="py-3 px-10 bg-green-600 hover:bg-green-500 border-2 mx-auto mb-5"
             onClick={() => router.push(PAGE_PATHS.MERCHANTS)}
           >
             Merchant Sign Up
           </button>
+          <p className="italic text-xl">
+            Currently serving these Zip Codes: 11209, 11220, 11228
+          </p>
         </div>
       </div>
       {/* <Ticker /> */}
