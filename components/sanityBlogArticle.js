@@ -4,9 +4,6 @@ import React from "react"
 import { PortableText } from "@portabletext/react"
 import Image from "next/image"
 
-// components
-import HorizontalRule from "@/components//horizontalRule"
-
 // helpers
 import { getSanityImageUrl } from "../utilities/helperFunctions"
 
