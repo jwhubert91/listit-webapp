@@ -30,11 +30,14 @@ export default function Home() {
             day.
           </h2>
           <button
-            className="py-3 px-10 bg-green-600 hover:bg-green-500 border-2 mx-auto"
+            className="py-3 px-10 bg-green-600 hover:bg-green-500 border-2 mx-auto mb-5"
             onClick={() => router.push(PAGE_PATHS.MERCHANTS)}
           >
             Merchant Sign Up
           </button>
+          <p className="italic text-xl">
+            Currently serving these Zip Codes: 11209, 11220, 11228
+          </p>
         </div>
       </div>
       {/* <Ticker /> */}

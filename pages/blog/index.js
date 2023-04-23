@@ -6,7 +6,6 @@ import { sanityClient } from "@/lib/sanity"
 import {
   publishDateString,
   getSanityImageUrl,
-  getSanityImageAsset,
 } from "@/utilities/helperFunctions"
 
 function BlogOverviewPage({ sanityBlogPosts }) {
