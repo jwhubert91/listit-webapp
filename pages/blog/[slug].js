@@ -1,16 +1,16 @@
 import React from "react"
-import { sanityClient } from "@/lib/sanity"
+import { sanityClient } from "../../lib/sanity"
 
 // components
-import Layout from "@/components/layout"
-import BlogArticle from "@/components/blogArticle"
-import SanityBlogArticle from "@/components/SanityBlogArticle"
+import Layout from "../../components/layout"
+import BlogArticle from "../../components/blogArticle"
+import SanityBlogArticle from "../../components/SanityBlogArticle"
 
 // helpers
 import {
   publishDateString,
   getSanityImageUrl,
-} from "@/utilities/helperFunctions"
+} from "../../utilities/helperFunctions"
 
 function BlogPage({ blogPost }) {
   const sanityMainImageUrl = getSanityImageUrl(blogPost.mainImage.image).url()
