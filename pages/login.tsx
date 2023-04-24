@@ -18,7 +18,7 @@ function Login({}: Props) {
       <div className="flex-1 flex flex-col text-center items-center py-5">
         <h1 className="text-5xl font-bold mb-5">Login</h1>
         <Link href={PAGE_PATHS.LOGIN} className="text-xl underline mb-5">
-          Don't have an account? Sign Up
+          {`Don't have an account? Sign Up`}
         </Link>
         <div className="w-full max-w-[500px]">
           <Input
