@@ -1,24 +1,33 @@
-import React from "react"
+import React, { ReactNode } from "react"
 
 type ButtonProps = {
   className?: string
-  title: string
+  children: ReactNode
   onButtonPress: () => void
 }
 
-function GoodButton({
-  className = "",
-  title = "",
-  onButtonPress,
-}: ButtonProps) {
+const buttonClasses = "py-3 px-10 rounded-lg text-xl"
+
+function GoodButton({ className = "", children, onButtonPress }: ButtonProps) {
   return (
     <button
-      className="py-3 px-10 bg-green-600 hover:bg-green-500 border-2 mx-auto"
+      className={`bg-spot_green hover:bg-green-500 ${buttonClasses} ${className}`}
       onClick={onButtonPress}
     >
-      {title}
+      {children}
     </button>
   )
 }
 
-export { GoodButton }
+function BlackButton({ className = "", children, onButtonPress }: ButtonProps) {
+  return (
+    <button
+      className={`text-white bg-black hover:bg-gray-900 ${buttonClasses} ${className}`}
+      onClick={onButtonPress}
+    >
+      {children}
+    </button>
+  )
+}
+
+export { GoodButton, BlackButton }

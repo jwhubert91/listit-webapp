@@ -6,7 +6,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        spot_green: "#1DD860",
+        air_red: "#FF385C",
+        tik_blue: "#24F7F0",
+        snap_yellow: "#FFFD01",
+        disc_purple: "#5663F7",
+      },
+    },
     screens: {
       sm: "320px",
       md: "640px",

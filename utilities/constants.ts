@@ -1,6 +1,7 @@
 export const PAGE_PATHS = {
   HOME: "/",
   BLOG: "/blog",
-  MERCHANTS: "/merchants",
+  LOGIN: "/login",
+  MERCHANT_SIGN_UP: "/merchant",
   CONTACT: "/contact",
 }

@@ -3,6 +3,7 @@ import Link from "next/link"
 import { BiMenu } from "react-icons/bi"
 import { AiOutlineClose } from "react-icons/ai"
 import { BsGlobe2 } from "react-icons/bs"
+import { PAGE_PATHS } from "@/utilities/constants"
 
 type Props = {
   className?: string
@@ -26,13 +27,22 @@ function Header({ className = "" }: Props) {
         </div>
       </Link>
       <nav className="flex md:gap-x-5 lg:gap-x-8 mr-3">
-        <Link href="/merchants" className="hover:underline hidden md:block">
+        <Link
+          href={PAGE_PATHS.MERCHANT_SIGN_UP}
+          className="hover:underline hidden md:block"
+        >
           Merchant Sign Up
         </Link>
-        <Link href="/blog" className="hover:underline hidden md:block">
+        <Link
+          href={PAGE_PATHS.BLOG}
+          className="hover:underline hidden md:block"
+        >
           Blog
         </Link>
-        <Link href="/contact" className="hover:underline hidden md:block">
+        <Link
+          href={PAGE_PATHS.CONTACT}
+          className="hover:underline hidden md:block"
+        >
           Help
         </Link>
         <button
@@ -48,15 +58,21 @@ function Header({ className = "" }: Props) {
         }`}
       >
         <Link
-          href="#merchant"
+          href={PAGE_PATHS.MERCHANT_SIGN_UP}
           className="hover:underline text-white text-3xl mt-11"
         >
           Merchant Sign Up
         </Link>
-        <Link href="/blog" className="hover:underline text-white text-3xl">
+        <Link
+          href={PAGE_PATHS.BLOG}
+          className="hover:underline text-white text-3xl"
+        >
           Blog
         </Link>
-        <Link href="#contact" className="hover:underline text-white text-3xl">
+        <Link
+          href={PAGE_PATHS.CONTACT}
+          className="hover:underline text-white text-3xl"
+        >
           Contact
         </Link>
       </div>

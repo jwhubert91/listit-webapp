@@ -19,7 +19,7 @@ function Layout({ children, className = "", headData }: LayoutProps) {
         <Headroom>
           <Header />
         </Headroom>
-        <main className="flex-1 flex flex-col items-center mx-auto pb-11 w-full layout__container">
+        <main className="flex-1 flex flex-col items-center mx-auto px-5 w-full layout__container">
           {children}
         </main>
         <Footer />
