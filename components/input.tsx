@@ -18,7 +18,7 @@ function Input({
   value = "",
 }: Props) {
   return (
-    <div className={`mb-2 text-left ${containerClassName}`}>
+    <div className={`mb-1 text-left ${containerClassName}`}>
       <label className="text-sm">{label}</label>
       <input
         type="text"

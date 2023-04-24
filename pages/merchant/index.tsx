@@ -3,6 +3,8 @@ import Layout from "@/components/layout"
 import { HeadDataProps } from "@/types/headData"
 import Input from "@/components/input"
 import { BlackButton } from "@/components/buttons"
+import Link from "next/link"
+import { PAGE_PATHS } from "@/utilities/constants"
 
 type Props = {}
 
@@ -17,12 +19,18 @@ function MerchantSignUp({}: Props) {
       <div className="flex-1 flex flex-col text-center items-center py-5">
         <h1 className="text-5xl font-bold mb-5">Merchant Sign Up</h1>
         <div className="max-w-[500px]">
-          <p className="mb-4">
+          <p className="mb-5">
             {`ListIt is the buy online pickup in-store solution for
-            independent retailers. It's free to make a page and begin selling.
+            independent retailers. It's free to list your products and always will be.
             `}
           </p>
         </div>
+        <Link
+          href={PAGE_PATHS.MERCHANT_LOGIN}
+          className="text-xl underline mb-5"
+        >
+          Already have an account? Log In
+        </Link>
         <div className="w-full max-w-[500px]">
           <Input
             onChange={(e) => console.log(e.target.value)}

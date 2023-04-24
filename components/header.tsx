@@ -27,13 +27,22 @@ function Header({ className = "" }: Props) {
         </div>
       </Link>
       <nav className="flex md:gap-x-5 lg:gap-x-8 mr-3">
-        <Link href="/merchants" className="hover:underline hidden md:block">
+        <Link
+          href={PAGE_PATHS.MERCHANT_SIGN_UP}
+          className="hover:underline hidden md:block"
+        >
           Merchant Sign Up
         </Link>
-        <Link href="/blog" className="hover:underline hidden md:block">
+        <Link
+          href={PAGE_PATHS.BLOG}
+          className="hover:underline hidden md:block"
+        >
           Blog
         </Link>
-        <Link href="/contact" className="hover:underline hidden md:block">
+        <Link
+          href={PAGE_PATHS.CONTACT}
+          className="hover:underline hidden md:block"
+        >
           Help
         </Link>
         <button
