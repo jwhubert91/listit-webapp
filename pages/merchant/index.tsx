@@ -25,10 +25,7 @@ function MerchantSignUp({}: Props) {
             `}
           </p>
         </div>
-        <Link
-          href={PAGE_PATHS.MERCHANT_LOGIN}
-          className="text-xl underline mb-5"
-        >
+        <Link href={PAGE_PATHS.LOGIN} className="text-xl underline mb-5">
           Already have an account? Log In
         </Link>
         <div className="w-full max-w-[500px]">
