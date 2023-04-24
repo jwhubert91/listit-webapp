@@ -6,10 +6,12 @@ type ButtonProps = {
   onButtonPress: () => void
 }
 
+const buttonClasses = "py-3 px-10 rounded-lg text-xl"
+
 function GoodButton({ className = "", children, onButtonPress }: ButtonProps) {
   return (
     <button
-      className={`py-3 px-10 bg-spot_green hover:bg-green-500 rounded-xl mx-auto ${className}`}
+      className={`bg-spot_green hover:bg-green-500 ${buttonClasses} ${className}`}
       onClick={onButtonPress}
     >
       {children}
@@ -20,7 +22,7 @@ function GoodButton({ className = "", children, onButtonPress }: ButtonProps) {
 function BlackButton({ className = "", children, onButtonPress }: ButtonProps) {
   return (
     <button
-      className={`py-3 px-10 text-white bg-black hover:bg-gray-900 rounded-xl mx-auto ${className}`}
+      className={`text-white bg-black hover:bg-gray-900 ${buttonClasses} ${className}`}
       onClick={onButtonPress}
     >
       {children}

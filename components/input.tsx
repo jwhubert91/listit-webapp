@@ -18,8 +18,8 @@ function Input({
   value = "",
 }: Props) {
   return (
-    <div className={`mb-3 ${containerClassName}`}>
-      <label className="">{label}</label>
+    <div className={`mb-2 text-left ${containerClassName}`}>
+      <label className="text-sm">{label}</label>
       <input
         type="text"
         placeholder={placeholder}
