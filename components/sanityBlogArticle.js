@@ -34,7 +34,6 @@ const PortableTextArticle = ({
                 priority={false}
                 unoptimized={true}
               />
-              <p>poop</p>
             </div>
             {/* {subtitle && <span className="text-sm">{subtitle}</span>} */}
           </div>

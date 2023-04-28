@@ -30,7 +30,7 @@ function BlogPageContainer({
         {blogTitle}
       </h1>
       <h2 className="text-gray-500 text-xl mb-5">{blogSubtitle}</h2>
-      <span className="text-sm text-gray-500 mb-6 block">{dateString}</span>
+      <span className="text-sm text-gray-500 mb-2 block">{dateString}</span>
       <div className="text-lg font-serif text-gray-700 leading-relaxed">
         {children}
       </div>
