@@ -5,6 +5,7 @@ export const PAGE_PATHS = {
   SIGNUP: "/signup",
   MERCHANT_SIGN_UP: "/merchant",
   CONTACT: "/contact",
+  STORE: "/store",
 }
 
 export const BREAKPOINTS = {
