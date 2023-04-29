@@ -27,27 +27,32 @@ export default function Home() {
             Find what you need in local stores. Order online and pick up same
             day.
           </h2>
-          <div className="tablet:flex tablet:gap-x-5 items-center mb-11">
+          <div className="flex flex-col items-center tablet:flex-row md:gap-x-2 md:mb-3">
             <Input
               onChange={(e) => setProductSearch(e.target.value)}
               value={productSearch}
               containerClassName="w-full max-w-[600px] mb-3 tablet:mb-0"
-              inputClassName="w-full"
+              inputClassName="w-full text-xl"
               placeholder="What do you need today?"
             />
-            <BlackButton onButtonPress={() => console.log(productSearch)}>
+            <BlackButton
+              onButtonPress={() => console.log(productSearch)}
+              className="w-full max-w-[600px] mb-3 md:mb-0 md:mx-auto tablet:mx-0"
+            >
               Search Products
             </BlackButton>
           </div>
-          <GoodButton
-            className="mb-5"
-            onButtonPress={() => router.push(PAGE_PATHS.MERCHANT_SIGN_UP)}
-          >
-            Merchant Sign Up
-          </GoodButton>
-          <p className="italic text-xl">
-            Currently serving zip codes: 11209, 11220, 11228
-          </p>
+          <div className="w-full max-w-[600px]">
+            <GoodButton
+              className="mb-5 w-full"
+              onButtonPress={() => router.push(PAGE_PATHS.MERCHANT_SIGN_UP)}
+            >
+              Merchant Sign Up
+            </GoodButton>
+            <p className="italic text-xl text-center">
+              Currently serving zip codes: 11209, 11220, 11228
+            </p>
+          </div>
         </div>
       </div>
       {/* <Ticker /> */}

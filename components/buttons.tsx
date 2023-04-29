@@ -6,7 +6,7 @@ type ButtonProps = {
   onButtonPress: () => void
 }
 
-const buttonClasses = "py-3 px-10 rounded-lg text-xl"
+const buttonClasses = "py-2 px-10 rounded-lg text-xl"
 
 function GoodButton({ className = "", children, onButtonPress }: ButtonProps) {
   return (
