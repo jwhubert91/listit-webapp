@@ -11,3 +11,14 @@ export const PAGE_PATHS = {
 export const BREAKPOINTS = {
   TABLET: 960,
 }
+
+export const DAYS_OF_WEEK = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"
+]
