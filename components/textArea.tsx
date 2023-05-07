@@ -6,34 +6,31 @@ type Props = {
   value?: string
   containerClassName?: string
   inputClassName?: string
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
-  inputType?: "text" | "email" | "password"
-  characterMax?: number
+  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void
+  maxLength?: number
 }
 
-function Input({
+function TextArea({
   label = "",
   placeholder = "",
   containerClassName = "",
   inputClassName = "",
   onChange,
   value = "",
-  inputType = "text",
-  characterMax,
+  maxLength,
 }: Props) {
   return (
     <div className={`mb-1 text-left ${containerClassName}`}>
       <label className="text-sm">{label}</label>
-      <input
-        type={inputType}
+      <textarea
         placeholder={placeholder}
         onChange={(e) => onChange(e)}
         className={`text-lg px-5 py-2 focus:outline-black ${inputClassName}`}
         value={value}
-        maxLength={characterMax}
+        maxLength={maxLength}
       />
     </div>
   )
 }
 
-export default Input
+export default TextArea

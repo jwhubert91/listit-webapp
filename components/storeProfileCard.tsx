@@ -1,8 +1,14 @@
 import React from "react"
-import Image from "next/image"
-import { DAYS_OF_WEEK } from "@/utilities/constants"
 
-function StoreProfileCard({ className = "" }) {
+// packages
+import Image from "next/image"
+import Link from "next/link"
+
+// utilities
+import { DAYS_OF_WEEK, PAGE_PATHS } from "@/utilities/constants"
+import StoreProfileImage from "./storeProfileImage"
+
+function StoreProfileCard({ className = "", isMerchant = false }) {
   const storeObject = {
     id: "12345",
     slug: "us-11209-peace-by-piece-thrift-store",
@@ -59,19 +65,25 @@ function StoreProfileCard({ className = "" }) {
   const pickupHoursArray = Object.values(storeObject.pickupHoursObject)
   const pickUpHoursToday = pickupHoursArray[codeDayNumber]
 
+  const storeEditUrl = `${PAGE_PATHS.STORE_EDIT}/${storeObject.id}`
+
   return (
     <div
-      className={`p-5 border border-gray-300 rounded-lg w-full tablet:grid tablet:grid-cols-[250px_500px] tablet:gap-x-5 tablet:items-center tablet:justify-center mb-5 ${className}`}
+      className={`p-5 relative border border-gray-300 rounded-lg w-full tablet:grid tablet:grid-cols-[250px_500px] tablet:gap-x-5 tablet:items-center tablet:justify-center mb-5 ${className}`}
     >
-      <div className="w-[150px] h-[150px] tablet:w-[250px] tablet:h-[250px] mb-2 mx-auto tablet:mx-0 relative">
-        <Image
-          src={storeObject.profileimageUrl}
-          alt={storeObject.name}
-          className="object-cover absolute rounded-full border border-black"
-          fill={true}
-          unoptimized={true}
-        />
-      </div>
+      {isMerchant && (
+        <Link
+          href={storeEditUrl}
+          className="absolute top-1 right-1 text-sm underline"
+        >
+          Edit Store Profile
+        </Link>
+      )}
+      <StoreProfileImage
+        imageUrl={storeObject.profileimageUrl}
+        altText={storeObject.name}
+        className="mb-2 mx-auto tablet:mx-0"
+      />
       <div className="text-center tablet:text-left">
         <h1 className="text-xl font-medium">{storeObject.name}</h1>
         <p className="text-sm">{storeObject.neighborhood}</p>

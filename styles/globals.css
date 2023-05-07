@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 .layout__container {
+  width: 100%;
   max-width: 1280px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 
 .homepage__heroBackground {
