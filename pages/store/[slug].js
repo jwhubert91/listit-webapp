@@ -5,6 +5,8 @@ import ProductCard from "@/components/productCard"
 import Input from "@/components/input"
 import { GoodButton } from "@/components/buttons"
 import { useState } from "react"
+import {useRouter} from "next/router"
+import {} from ""
 
 function StorePage() {
   const headData = {
@@ -15,6 +17,8 @@ function StorePage() {
 
   let isMerchant = true
   const storeProducts = []
+
+  const router = useRouter()
 
   const [productSearch, setProductSearch] = useState("")
 
@@ -39,9 +43,9 @@ function StorePage() {
             </BlackButton>
           </div>
           <div className="grid grid-cols-2 gap-3 md:grid-cols-3 tablet:grid-cols-6 w-full mb-11">
+            {/* <ProductCard />
             <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            <ProductCard /> */}
           </div>
         </>
       ) : (
@@ -50,7 +54,7 @@ function StorePage() {
           {isMerchant && (
             <GoodButton
               className="mt-3 w-full max-w-[600px]"
-              onButtonPress={() => console.log("Add product")}
+              onButtonPress={router.push("/add")}
             >
               Add your first product
             </GoodButton>

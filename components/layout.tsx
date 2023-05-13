@@ -8,10 +8,11 @@ import Headroom from "react-headroom"
 interface LayoutProps {
   children: ReactNode
   className?: string
+  mainClassName?: string
   headData: HeadDataProps
 }
 
-function Layout({ children, headData, className = "" }: LayoutProps) {
+function Layout({ children, headData, className = "", mainClassName="" }: LayoutProps) {
   return (
     <>
       <SEOHead headData={headData} />
@@ -19,7 +20,7 @@ function Layout({ children, headData, className = "" }: LayoutProps) {
         <Headroom>
           <Header />
         </Headroom>
-        <main className="flex-1 flex flex-col items-center mx-auto px-5 pb-5 w-full layout__container">
+        <main className={`flex-1 flex flex-col items-center mx-auto px-5 w-full layout__container ${mainClassName}`}>
           {children}
         </main>
         <Footer />
