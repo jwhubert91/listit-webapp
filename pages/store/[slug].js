@@ -1,12 +1,18 @@
-import React from "react"
+import React, { useState } from "react"
+
+// packages
+import {useRouter } from "next/router"
+
+// components
 import Layout from "@/components/layout"
 import StoreProfileCard from "@/components/storeProfileCard"
 import ProductCard from "@/components/productCard"
 import Input from "@/components/input"
-import { GoodButton } from "@/components/buttons"
-import { useState } from "react"
-import {useRouter} from "next/router"
-import {} from ""
+import { GoodButtonLink, BlackButton } from "@/components/buttons"
+
+// utils
+import { PAGE_PATHS } from "@/utilities/constants"
+
 
 function StorePage() {
   const headData = {
@@ -49,15 +55,15 @@ function StorePage() {
           </div>
         </>
       ) : (
-        <div className="w-full text-center">
-          <p>There are currently no products listed.</p>
+        <div className="w-full text-center mb-11">
+          <p className="mb-3">There are currently no products listed.</p>
           {isMerchant && (
-            <GoodButton
-              className="mt-3 w-full max-w-[600px]"
-              onButtonPress={router.push("/add")}
+            <GoodButtonLink
+              className="w-full max-w-[600px]"
+              href={PAGE_PATHS.ADD_PRODUCT}
             >
               Add your first product
-            </GoodButton>
+            </GoodButtonLink>
           )}
         </div>
       )}

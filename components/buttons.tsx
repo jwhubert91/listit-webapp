@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react"
+import Link from "next/link"
 
 type ButtonProps = {
   className?: string
@@ -6,16 +7,34 @@ type ButtonProps = {
   onButtonPress: () => void
 }
 
+type LinkProps = {
+  className?: string
+  children: ReactNode
+  href?: string
+}
+
 const buttonClasses = "py-2 px-10 rounded-lg text-xl"
+const goodButtonClasses = "bg-spot_green hover:bg-green-500"
 
 function GoodButton({ className = "", children, onButtonPress }: ButtonProps) {
   return (
     <button
-      className={`bg-spot_green hover:bg-green-500 ${buttonClasses} ${className}`}
+      className={`${goodButtonClasses} ${buttonClasses} ${className}`}
       onClick={onButtonPress}
     >
       {children}
     </button>
+  )
+}
+
+function GoodButtonLink({ className = "", children, href="" }: LinkProps) {
+  return (
+    <Link
+      className={`${goodButtonClasses} ${buttonClasses} ${className}`}
+      href={href}
+    >
+      {children}
+    </Link>
   )
 }
 
@@ -30,4 +49,4 @@ function BlackButton({ className = "", children, onButtonPress }: ButtonProps) {
   )
 }
 
-export { GoodButton, BlackButton }
+export { GoodButton, BlackButton, GoodButtonLink }

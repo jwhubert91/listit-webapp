@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 
 // packages
 import { useRouter } from "next/router"
@@ -13,8 +13,6 @@ import HourSelectDropdown from "@/components/hourSelectDropdown"
 
 // utilties
 import { PAGE_PATHS } from "@/utilities/constants"
-import { useState } from "react"
-import { useEffect } from "react"
 
 function StoreEdit() {
   const headData = {
