@@ -51,7 +51,7 @@ function AdminLoginForm({ onSuccess }: Props) {
         </p>
       )}
       <div className="text-center">
-        <GoodButton title="Submit" onButtonPress={handleSubmit} />
+        <GoodButton onButtonPress={handleSubmit}>Submit</GoodButton>
       </div>
     </div>
   )

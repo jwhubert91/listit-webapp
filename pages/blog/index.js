@@ -14,8 +14,6 @@ function BlogOverviewPage({ sanityBlogPosts }) {
     pageDescription: "Blog Posts for Listit.one",
   }
 
-  console.log(sanityBlogPosts)
-
   return (
     <Layout headData={headData}>
       <div>

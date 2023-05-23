@@ -14,11 +14,15 @@ function Custom404({}: Props) {
     <Layout headData={headData}>
       <div className="flex-1 flex flex-col justify-center">
         <h1 className="text__headerMassive mb-11">404 Page</h1>
-        <h2 className="font-bold text-3xl">
+        <h2 className="font-bold text-3xl leading-normal">
           {"Woops! You've reached the 404 page. Go "}
-          <Link href={PAGE_PATHS.HOME}>back to safety</Link> or let us know what
-          you were looking for on the{" "}
-          <Link href={PAGE_PATHS.CONTACT}>help page.</Link>
+          <Link href={PAGE_PATHS.HOME} className="underline">
+            back to safety
+          </Link>{" "}
+          or let us know what you were looking for on the{" "}
+          <Link href={PAGE_PATHS.CONTACT} className="underline">
+            help page.
+          </Link>
         </h2>
       </div>
     </Layout>

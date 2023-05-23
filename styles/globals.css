@@ -3,19 +3,20 @@
 @tailwind utilities;
 
 .layout__container {
+  width: 100%;
   max-width: 1280px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 
-/*
-.panel__half {
-  min-height: 45vh;
+.homepage__heroBackground {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.15)
+    ),
+    url("https://images.unsplash.com/photo-1601924994987-69e26d50dc26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.panel__full {
-  min-height: 90vh;
-}
-*/
 
 .blog__width {
   max-width: 728px;

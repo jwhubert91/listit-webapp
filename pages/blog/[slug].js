@@ -11,6 +11,7 @@ import {
   publishDateString,
   getSanityImageUrl,
 } from "@/utilities/helperFunctions"
+import Image from "next/image"
 
 function BlogPage({ blogPost }) {
   const sanityMainImageUrl = getSanityImageUrl(blogPost.mainImage.image).url()
@@ -30,6 +31,18 @@ function BlogPage({ blogPost }) {
         blogSubtitle={headData.pageDescription}
         dateString={publishDate}
       >
+        <div className="w-full aspect-video relative mb-1">
+          <Image
+            src={sanityMainImageUrl}
+            sizes={"100vw"}
+            fill={true}
+            className="absolute"
+            unoptimized={true}
+          />
+        </div>
+        <div className="italic text-center">
+          <SanityBlogArticle content={blogPost.mainImage.subtitle} />
+        </div>
         <SanityBlogArticle content={blogPost.body} />
       </BlogArticle>
     </Layout>
