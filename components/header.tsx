@@ -37,12 +37,6 @@ function Header({ className = "" }: Props) {
       </Link>
       <nav className="flex tablet:gap-x-5 lg:gap-x-8 mr-3">
         <Link
-          href={PAGE_PATHS.MERCHANT_SIGN_UP}
-          className="hover:underline hidden tablet:block"
-        >
-          Merchant Sign Up
-        </Link>
-        <Link
           href={PAGE_PATHS.BLOG}
           className="hover:underline hidden tablet:block"
         >
@@ -52,13 +46,7 @@ function Header({ className = "" }: Props) {
           href={PAGE_PATHS.CONTACT}
           className="hover:underline hidden tablet:block"
         >
-          Help
-        </Link>
-        <Link
-          href={PAGE_PATHS.LOGIN}
-          className="hover:underline hidden tablet:block"
-        >
-          Login
+          Contact Us
         </Link>
         <button
           className="p-0 m-0 bg-none text-3xl text-white tablet:hidden"
@@ -73,12 +61,6 @@ function Header({ className = "" }: Props) {
         }`}
       >
         <Link
-          href={PAGE_PATHS.MERCHANT_SIGN_UP}
-          className="hover:underline text-white text-3xl mt-11"
-        >
-          Merchant Sign Up
-        </Link>
-        <Link
           href={PAGE_PATHS.BLOG}
           className="hover:underline text-white text-3xl"
         >
@@ -88,13 +70,7 @@ function Header({ className = "" }: Props) {
           href={PAGE_PATHS.CONTACT}
           className="hover:underline text-white text-3xl"
         >
-          Contact
-        </Link>
-        <Link
-          href={PAGE_PATHS.LOGIN}
-          className="hover:underline text-white text-3xl"
-        >
-          Login
+          Contact Us
         </Link>
       </div>
     </div>

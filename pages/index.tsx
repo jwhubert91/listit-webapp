@@ -28,7 +28,8 @@ export default function Home() {
               Find what you need in local stores. Order online and pick up same
               day.
             </h2>
-            <div className="flex flex-col items-center tablet:flex-row md:gap-x-2 md:mb-3">
+            <h2 className="text-3xl font-bold">Coming soon!</h2>
+            {/* <div className="flex flex-col items-center tablet:flex-row md:gap-x-2 md:mb-3">
               <Input
                 onChange={(e) => setProductSearch(e.target.value)}
                 value={productSearch}
@@ -42,19 +43,19 @@ export default function Home() {
               >
                 Search Products
               </BlackButton>
-            </div>
+            </div> */}
             <p className="italic text-xl text-center mb-5 tablet:text-left">
-              Currently serving zip codes: 11209, 11220, 11228
+              Serving zip codes: 11209, 11220, 11228
             </p>
           </div>
-          <div className="self-end mb-5 w-full flex justify-center tablet:self-start tablet:justify-start tablet:max-w-[350px] tablet:mb-0">
+          {/* <div className="self-end mb-5 w-full flex justify-center tablet:self-start tablet:justify-start tablet:max-w-[350px] tablet:mb-0">
             <GoodButton
               className="w-full max-w-[600px]"
               onButtonPress={() => router.push(PAGE_PATHS.MERCHANT_SIGN_UP)}
             >
               Merchant Sign Up
             </GoodButton>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <Ticker /> */}
